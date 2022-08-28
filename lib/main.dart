@@ -68,7 +68,26 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: Text("hwllo"),
+      // THIS IS THE BODY OF THE APPLICATION
+      body: Center(
+        child: Container(
+          height: 300,
+          width: 300.0,
+          // color: Colors.amber,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(150),
+            color: Colors.amberAccent,
+          ),
+          child: Center(
+            child: Text(
+              "hwllo",
+              style: TextStyle(
+                fontSize: 40.00,
+              ),
+            ),
+          ),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         //universally for any button,must have an aciton (onPressed)
         onPressed: _incrementCounter,
