@@ -44,11 +44,31 @@ class _MyHomePageState extends State<MyHomePage> {
     // });
   }
 
+  void menuOpening() {
+    print("menu opening");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: ,
-      // body: ,
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: menuOpening,
+          icon: Icon(
+            Icons.menu,
+          ),
+        ),
+        title: Text("AppBAr"),
+        actions: [
+          IconButton(
+            onPressed: menuOpening,
+            icon: Icon(
+              Icons.more_vert,
+            ),
+          ),
+        ],
+      ),
+      body: Text("hwllo"),
       floatingActionButton: FloatingActionButton(
         //universally for any button,must have an aciton (onPressed)
         onPressed: _incrementCounter,
